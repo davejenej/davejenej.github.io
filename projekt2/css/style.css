@@ -1,4 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: #eee;
-    font-family: "Pacifico", cursive;
+    font-family: 'Comfortaa', cursive;
+}
+
+.text-primary {
+    color: #93cb52;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+#navbar {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar a {
+    color: #fff;
+}
+
+#navbar ul li a {
+
+}
+
+#navbar ul li a:hover {
+    background-color: #93cb52;
+    border-radius: 2px;
+}
+
+#navbar {
+    position: sticky;
 }
