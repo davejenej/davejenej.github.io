@@ -125,6 +125,22 @@ h1 {
 
 .lead {
     color: white;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.source{
+    font-size: small;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #aaa;
+    margin: 10px 20px;
+}
+
+.source a {
+    color: #aaa;
+    text-decoration: none;
 }
 
 /* Section: O hře */
@@ -168,7 +184,7 @@ h1 {
 }
 
 #what .items .item i {
-    background: darkred;
+    background: red;
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
