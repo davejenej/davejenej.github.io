@@ -183,6 +183,7 @@ h1 {
 #what .item {
     text-align: center;
     padding: 1rem;
+    flex: 1;
 }
 
 #what .items .item i {
