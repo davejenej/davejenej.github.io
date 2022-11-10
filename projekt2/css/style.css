@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Comfortaa', cursive;
+    background: #eee;
 }
 
 .text-primary {
@@ -112,7 +113,7 @@ p {
 }
 
 .bg-dark {
-    background: #333333;
+    background: black;
     color: #fff;
 }
 
@@ -161,6 +162,7 @@ h1 {
     font-size: 2rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
+    text-align: center;
 }
 
 .py-1 {
@@ -173,6 +175,30 @@ h1 {
 
 .py-3 {
     padding: 3rem 0;
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2.5rem;
+}
+
+.p-3 {
+    padding: 3.5rem;
+}
+
+.m-1 {
+    margin: 1.5rem 0;
+}
+
+.m-2 {
+    margin: 2.5rem 0;
+}
+
+.m-3 {
+    margin: 1.5rem 0;
 }
 
 #what .items {
@@ -191,4 +217,26 @@ h1 {
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #aaaaaa dotted 1px;
+}
+
+#aboutgame {
+    display: flex;
+}
+
+#aboutgame div {
+    flex: 1;
+}
+
+#aboutgame .aboutgame-img {
+    background: url("https://images.unsplash.com/photo-1583312736215-675896e24e27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80") no-repeat center center/cover;
 }
