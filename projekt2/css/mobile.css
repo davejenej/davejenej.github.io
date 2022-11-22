@@ -1,14 +1,14 @@
-#about .items {
+#what .items {
     display: block;
     padding: 1rem;
 }
 
-#about .items .item {
+#what .items .item {
     display: flex;
     text-align: center;
 }
 
-#about .items .item i {
+#what .items .item i {
     align-self: center;
     margin-right: 1.3rem;
     margin-bottom: 0;
