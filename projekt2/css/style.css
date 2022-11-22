@@ -263,3 +263,19 @@ h1 {
 #contact div {
     flex: 1;
 }
+
+#contact .contact-form .form-group{
+    margin: 0.75rem;
+}
+#contact .contact-form label{
+    display: block;
+    margin-bottom: 3px;
+}
+#contact .contact-form input,
+#contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact h3{
+    margin-top: 2rem;
+}
