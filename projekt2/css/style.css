@@ -63,7 +63,8 @@ p {
     margin: 0 0.25rem;
 }
 
-#navbar ul li a:hover {
+#navbar ul li a:hover,
+.active {
     background: darkred;
     border-radius: 10px;
 }
@@ -108,7 +109,6 @@ p {
     border: none;
     border-radius: 5px;
     text-decoration: none;
-
 }
 
 .btn:hover {
@@ -118,6 +118,17 @@ p {
 .btn-dark {
     background: #333;
     color: white;
+}
+
+.btn-odeslat {
+    display: inline-block;
+    color: white;
+    background: black;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 .bg-dark {
