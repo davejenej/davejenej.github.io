@@ -69,6 +69,10 @@ p {
     border-radius: 10px;
 }
 
+#navbar #hambac {
+    display: none;
+}
+
 /* Showcase */
 
 #showcase {
@@ -85,7 +89,7 @@ p {
     align-items: center;
     height: 100%;
     padding: 0 2rem;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Utility Classes */
@@ -151,7 +155,7 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.source{
+.source {
     font-size: small;
     position: absolute;
     bottom: 0;
@@ -279,19 +283,22 @@ h1 {
     flex: 1;
 }
 
-#contact .contact-form .form-group{
+#contact .contact-form .form-group {
     margin: 0.75rem;
 }
-#contact .contact-form label{
+
+#contact .contact-form label {
     display: block;
     margin-bottom: 3px;
 }
+
 #contact .contact-form input,
-#contact .contact-form textarea{
+#contact .contact-form textarea {
     width: 100%;
     padding: 0.5rem;
 }
-#contact h3{
+
+#contact h3 {
     margin-top: 2rem;
 }
 

@@ -24,7 +24,7 @@
     }
 
     #navbar #hambac {
-        display: none;
+        display: block;
     }
 
     #navbar ul {
