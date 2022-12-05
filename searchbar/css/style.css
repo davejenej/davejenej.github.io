@@ -2,52 +2,83 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'arial', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-section {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+body {
+    background-color: rgba(25, 25, 33, 0.91);
 }
 
-section header {
-    position: absolute;
-    top: 0;
-    width: 100%;
+#navbar {
+    background-color: darkblue;
+
+}
+
+#navbar ul {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 1rem 1rem;
+    list-style: none;
 }
 
-section header ul {
+#navbar ul li a {
+    color: greenyellow;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10rem;
 }
 
-section header ul li {
-    list-style: none;
-    margin-left: 20px;
+main .showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.logo {
+    margin: 36px;
 }
 
-section header ul li a {
-    color: #111;
-    text-decoration: none;
-    font-size: 13px;
+main .showcase-content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-section header ul li button {
-    background: #4584ef;
-    border: none;
-    outline: none;
-    padding: 8px 14px;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    border-radius: 3px;
+main .showcase-content form .search {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+main .showcase-content form .search input {
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 5px;
+    margin-left: 2rem;
+    padding-left: 20px;
+}
+
+main .showcase-content form .btn input {
+    margin: 5px;
+    padding: 20px;
+    color: #444444;
+    font-size: 15px;
     cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid;
+}
+
+main .showcase-content form .btn input:hover {
+    background-color: gray;
 }

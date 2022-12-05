@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Google advanced search</title>
+</head>
+
+<body>
+<nav id="navbar">
+    <ul>
+        <li>
+            <a href="index.html">Google search</a>
+        </li>
+        <li>
+            <a href="images.html">Google image search</a>
+        </li>
+        <li>
+            <a href="advanced.html">Google advanced search</a>
+        </li>
+    </ul>
+</nav>
+
+<main>
+    <div class="showcase-content">
+        <div class="logo">
+            <img src="./img/google.png" alt="Google logo">
+        </div>
+        <form action="https://www.google.com/search" name="f">
+            <div class="search text">
+                <p>Všechna tato slova:</p>
+                <input type="text" name="as_q" autocomplete="off" autocorrect="off" autocapitalize="off"
+                       spellcheck="false">
+            </div>
+            <div class="search text">
+                <p>Přesně toto slovo:</p>
+                <input type="text" name="as_epq" autocomplete="off" autocorrect="off" autocapitalize="off"
+                       spellcheck="false">
+            </div>
+            <div class="search text">
+                <p>Kterékoliv z těchto slov:</p>
+                <input type="text" name="as_oq" autocomplete="off" autocorrect="off" autocapitalize="off"
+                       spellcheck="false">
+            </div>
+            <div class="search text">
+                <p>Žádné z těchto slov:</p>
+                <input type="text" name="as_eq" autocomplete="off" autocorrect="off" autocapitalize="off"
+                       spellcheck="false">
+            </div>
+            <div class="btn">
+                <input type="submit" value="Advanced search">
+            </div>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>
