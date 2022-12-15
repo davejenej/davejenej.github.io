@@ -35,17 +35,17 @@
                 // Výpočet
                 let delkau = (Math.sqrt((bx - ax)*(bx - ax)+(by - ay)*(by - ay))).toFixed(2);
                 let delkav = (Math.sqrt((dx - cx)*(dx - cx)+(dy - cy)*(dy - cy))).toFixed(2);
-                let soucet = (bx - ax) + (dx - cx);
-                let odchylka = soucin / delkau * delkav
-                let odchylkastupne = Math.acos(odchylka)*(180/Math.PI)
+                let soucin = (bx - ax) * (dx - cx) + (by - ay) * (dy - cy)
+                let odchylka = soucin / delkau * delkav;
+                let odchylkastupne = Math.acos(odchylka)*(180/Math.PI);
 
                 // Výstup
                 document.querySelector("#delkau").innerHTML = `Délka vektoru u: ${delkau}`;
                 document.querySelector("#delkav").innerHTML = `Délka vektoru v: ${delkav}`;
-                document.querySelector("#soucet").innerHTML = `Součet vektorů u a v: ${soucet}`;
-                document.querySelector("#rozdil").innerHTML = `Rozdíl vektorů u a v: 0`;
-                document.querySelector("#soucin").innerHTML = `Skalární součin vektorů u a v: 0`;
-                document.querySelector("#odchylka").innerHTML = `Odchylka vektorů u a v: 0`;
+                document.querySelector("#soucet").innerHTML = `Součet vektorů u a v: (${(bx - ax) + (dx - cx)},${(by - ay) + (dy - cy)})`;
+                document.querySelector("#rozdil").innerHTML = `Rozdíl vektorů u a v: (${(bx - ax) - (dx - cx)},${(by - ay) - (dy - cy)})`;
+                document.querySelector("#soucin").innerHTML = `Součin vektorů u a v: ${soucin}`;
+                document.querySelector("#odchylka").innerHTML = `Odchylka vektorů u a v: ${odchylkastupne}°`;
 
 
                 // Stop form from submitting
@@ -83,13 +83,12 @@
     <input type="number"
            name="by"
            id="by"
-           placeholder="y">
-
+           placeholder="y"><br>
     C:
     <input type="number"
            name="cx"
            id="cx"
-           placeholder="c">
+           placeholder="x">
     <input type="number"
            name="cy"
            id="cy"
@@ -107,13 +106,13 @@
            value="Vypočítat" id="submit">
 </form>
 
-<p><div id="delkau"></div>
-<p><div id="delkav"></div>
-<p><div id="soucet"></div>
-<p><div id="rozdil"></div>
-<p><div id="soucin"></div>
-<p><div id="odchylka"></div>
-</p>
+<p><div id="delkau"></div></p>
+<p><div id="delkav"></div></p>
+<p><div id="soucet"></div></p>
+<p><div id="rozdil"></div></p>
+<p><div id="soucin"></div></p>
+<p><div id="odchylka"></div></p>
+
 
 </body>
 </html>
