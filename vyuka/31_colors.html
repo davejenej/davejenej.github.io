@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Hello</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      document.querySelectorAll('button').forEach(function (butt) {
+        butt.onclick = function () {
+          document.querySelector('#hello').style.color = butt.dataset.barva;
+        }
+      });
+    });
+
+
+  </script>
+</head>
+<body>
+<h1 id="hello">Hello</h1>
+<button data-barva="red">Red</button>
+<button data-barva="blue">Blue</button>
+<button data-barva="green">Green</button>
+</body>
+</html>
