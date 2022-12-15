@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vektory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sty.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelector('form').onsubmit = () => {
+        let ax = document.querySelector('#ax').value;
+        let ay = document.querySelector('#ay').value;
+        let bx = document.querySelector('#bx').value;
+        let by = document.querySelector('#by').value;
+
+        let deleni1 = (bx/ax)
+        let deleni2 = (by/ay)
+
+        if (deleni1 === deleni2) {
+          document.querySelector("#rovnobeznost").innerHTML = "Jsou rovnoběžné"
+          document.querySelector("#rovnobeznost2").innerHTML = `Velikost ${deleni2.toFixed(2)}`
+        }
+
+        else{
+          document.querySelector("#rovnobeznost").innerHTML = `nejsou rovnoběžné`
+          document.querySelector("#rovnobeznost2").innerHTML = `násobek: ${deleni1.toFixed(2)} a ${deleni2.toFixed(2)}`
+        }
+
+        return false;
+      }
+
+    })
+  </script>
+</head>
+<body>
+<form>
+  <p>Jsou tyto vektory rovnoběžné?</p>
+  A:
+  <input type="number"
+         name="ax"
+         id="ax"
+         placeholder="x">
+  <input type="number"
+         name="ay"
+         id="ay"
+         placeholder="y"><br>
+  B:
+  <input type="number"
+         name="bx"
+         id="bx"
+         placeholder="x">
+  <input type="number"
+         name="by"
+         id="by"
+         placeholder="y">
+
+  <div><input class="inputbtn" type="submit"
+              value="Vypočítat"
+              id="submit">
+  </div>
+</form>
+
+
+<div>
+  <div id="rovnobeznost"></div>
+  <div id="rovnobeznost2">Násobek:</div>
+</div>
+
+</body>
+</html>
