@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Please fill out the form below to help us improve our services:</p>
+<form id="survey-form">
+    <label id="name-label" for="name">Name:</label><br>
+    <input id="name" type="text" placeholder="Enter your name" required><br>
+    <label id="email-label" for="email">Email:</label><br>
+    <input id="email" type="email" placeholder="Enter your email" required><br>
+    <label id="number-label" for="number">Age:</label><br>
+    <input id="number" type="number" min="1" max="10" placeholder="Enter a number between 1 and 199"><br>
+    <label for="dropdown">Choose an option:</label><br>
+    <select id="dropdown">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+    </select><br>
+    <label>Choose a color:</label><br>
+    <input type="radio" name="color" value="red"> Red<br>
+    <input type="radio" name="color" value="green"> Green<br>
+    <input type="radio" name="color" value="blue"> Blue<br>
+    <label>Choose your interests:</label><br>
+    <input type="checkbox" name="interest" value="art"> Art<br>
+    <input type="checkbox" name="interest" value="music"> Music<br>
+    <input type="checkbox" name="interest" value="sports"> Sports<br>
+    <label for="comments">Additional comments:</label><br>
+    <textarea id="comments"></textarea><br>
+    <button id="submit">Submit</button>
+</form>
+</body>
+</html>
