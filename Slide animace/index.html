@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Timeline mých PVA projektů</title>
+</head>
+
+<body>
+<header id="header">
+    <h1 class="heading"><i class="fa-solid fa-laptop-code"></i> Timeline mých PVA projektů</h1>
+    <h5><i class="fa-solid fa-user"></i> David Štencel</h5>
+</header>
+<section id="timeline">
+    <ul>
+        <li>
+            <div>
+                <h3 class="heading-2">Google Search bar</h3>
+                <p>5.12.2022</p>
+                <a href="https://davejenej.github.io/searchbar/">Od originálu k nerozeznání</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3 class="heading-2">Projekt 2 - Mafia 2 page</h3>
+                <p>15.12.2022</p>
+                <a href="https://davejenej.github.io/projekt2">Odkaz zde</a>
+            </div>
+        </li>
+
+        <li>
+            <div>
+                <h3 class="heading-2">Vektory 1</h3>
+                <p>15.12.2022</p>
+                <a href="https://davejenej.github.io/vyuka/vektory.html">Možná stále funguje...</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3 class="heading-2">Vektory 2</h3>
+                <p>15.12.2022</p>
+                <a href="https://davejenej.github.io/vyuka/vektory2.html">Tato je nějaká pokažená, ale co už</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3 class="heading-2">To do list</h3>
+                <p>??.1.2023</p>
+                <a href="davejenej.github.io/todolist/">Lepší než Google Tasks</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3 class="heading-2">FCC_01 Survey Form</h3>
+                <p>5.1.2023</p>
+                <a href="davejenej.github.io/freecodecamp/survey-form/">Na CSS nezbyl čas :-/</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3 class="heading-2">FCC_02 Tribute Page v1.0</h3>
+                <p>??.01.2023</p>
+                <a href="davejenej.github.io/freecodecamp/tribute-page/">Varianta 1</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3 class="heading-2">FCC_02 Tribute Page v2.0</h3>
+                <p>??.01.2023</p>
+                <a href="davejenej.github.io/freecodecamp/tribute-page-odevzdani-mix-zdroju/">Varianta 2</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3 class="heading-2">FCC_03 Technical Documentation Page</h3>
+                <p>20.01.2023</p>
+                <a href="davejenej.github.io/freecodecamp/tech-doc/">Dokumentace ke hře Mafia 2</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3 class="heading-2">FCC_04 Product Landing Page</h3>
+                <p>2.02.2023</p>
+                <a href="davejenej.github.io/freecodecamp/product landing page/">OG Guitars (kytary)</a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3 class="heading-2">FCC Ferris Wheel</h3>
+                <p>04.02.2023</p>
+                <a href="https://davejenej.github.io/freecodecamp/Ferris%20Wheel/">A přece se točí!</a>
+            </div>
+        </li>
+    </ul>
+</section>
+</body>
+<script>
+    const items = document.querySelectorAll("#timeline li");
+
+    const isInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
+    const run = () =>
+        items.forEach((item) => {
+            if (isInViewport(item)) {
+                item.classList.add("show");
+            }
+        });
+
+    // Events
+    window.addEventListener("load", run);
+    window.addEventListener("resize", run);
+    window.addEventListener("scroll", run);
+</script>
+</html>
