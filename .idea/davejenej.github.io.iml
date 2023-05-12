@@ -10,5 +10,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="module" module-name="rozhovory-2023-d20156" />
+    <orderEntry type="module" module-name="obrazy-2023" />
   </component>
 </module>
